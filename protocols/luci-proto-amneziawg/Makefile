@@ -6,8 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=Support for AmneziaWG Web UI
-LUCI_DESCRIPTION:=Provides Web UI for AmneziaWG
+LUCI_TITLE:=Support for AmneziaWG VPN
 LUCI_DEPENDS:=+amneziawg-tools +ucode +luci-lib-uqr +resolveip
 LUCI_PKGARCH:=all
 

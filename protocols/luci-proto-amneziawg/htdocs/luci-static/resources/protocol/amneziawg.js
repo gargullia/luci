@@ -83,8 +83,8 @@ var cbiKeyPairGenerate = form.DummyValue.extend({
 			'class': 'btn',
 			'click': ui.createHandlerFn(this, function(section_id, ev) {
 				var prv = this.section.getUIElement(section_id, 'private_key'),
-				    pub = this.section.getUIElement(section_id, 'public_key'),
-				    map = this.map;
+					pub = this.section.getUIElement(section_id, 'public_key'),
+					map = this.map;
 
 				return generateKey().then(function(keypair) {
 					prv.setValue(keypair.priv);
@@ -193,87 +193,87 @@ return network.registerProtocol('amneziawg', {
 			return true;
 		};
 
-        // AmneziaWG
+		// AmneziaWG
 
-        try {
-            s.tab('amneziawg', _('AmneziaWG Settings'), _('Further information about AmneziaWG interfaces and peers at <a href=\'https://docs.amnezia.org/documentation/amnezia-wg\'>amnezia.org</a>.'));
-        }
-        catch(e) {}
+		try {
+			s.tab('amneziawg', _('AmneziaWG Settings'), _('Further information about AmneziaWG interfaces and peers at <a href=\'https://docs.amnezia.org/documentation/amnezia-wg\'>amnezia.org</a>.'));
+		}
+		catch(e) {}
 
-        o = s.taboption('amneziawg', form.Value, 'awg_jc', _('Jc'), _('Junk packet count.'));
-        o.datatype = 'uinteger';
-        o.placeholder = '0';
-        o.optional = true;
+		o = s.taboption('amneziawg', form.Value, 'awg_jc', _('Jc'), _('Junk packet count.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
 
-        o = s.taboption('amneziawg', form.Value, 'awg_jmin', _('Jmin'), _('Junk packet minimum size.'));
-        o.datatype = 'uinteger';
-        o.placeholder = '0';
-        o.optional = true;
+		o = s.taboption('amneziawg', form.Value, 'awg_jmin', _('Jmin'), _('Junk packet minimum size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
 
-        o = s.taboption('amneziawg', form.Value, 'awg_jmax', _('Jmax'), _('Junk packet maximum size.'));
-        o.datatype = 'uinteger';
-        o.placeholder = '0';
-        o.optional = true;
+		o = s.taboption('amneziawg', form.Value, 'awg_jmax', _('Jmax'), _('Junk packet maximum size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
 
-        o = s.taboption('amneziawg', form.Value, 'awg_s1', _('S1'), _('Handshake initiation packet junk header size.'));
-        o.datatype = 'uinteger';
-        o.placeholder = '0';
-        o.optional = true;
+		o = s.taboption('amneziawg', form.Value, 'awg_s1', _('S1'), _('Handshake initiation packet junk header size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
 
-        o = s.taboption('amneziawg', form.Value, 'awg_s2', _('S2'), _('Handshake response packet junk header size.'));
-        o.datatype = 'uinteger';
-        o.placeholder = '0';
-        o.optional = true;
+		o = s.taboption('amneziawg', form.Value, 'awg_s2', _('S2'), _('Handshake response packet junk header size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
 		
 		o = s.taboption('amneziawg', form.Value, 'awg_s3', _('S3'), _('Cookie reply packet junk header size.'));
-        o.datatype = 'uinteger';
-        o.placeholder = '0';
-        o.optional = true;
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
 		
 		o = s.taboption('amneziawg', form.Value, 'awg_s4', _('S4'), _('Transport packet junk header size.'));
-        o.datatype = 'uinteger';
-        o.placeholder = '0';
-        o.optional = true;
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
 
-        o = s.taboption('amneziawg', form.Value, 'awg_h1', _('H1'), _('Handshake initiation packet type header.'));
-        o.datatype = 'string';
-        o.placeholder = '1';
-        o.optional = true;
+		o = s.taboption('amneziawg', form.Value, 'awg_h1', _('H1'), _('Handshake initiation packet type header.'));
+		o.datatype = 'string';
+		o.placeholder = '1';
+		o.optional = true;
 
-        o = s.taboption('amneziawg', form.Value, 'awg_h2', _('H2'), _('Handshake response packet type header.'));
-        o.datatype = 'string';
-        o.placeholder = '2';
-        o.optional = true;
+		o = s.taboption('amneziawg', form.Value, 'awg_h2', _('H2'), _('Handshake response packet type header.'));
+		o.datatype = 'string';
+		o.placeholder = '2';
+		o.optional = true;
 
-        o = s.taboption('amneziawg', form.Value, 'awg_h3', _('H3'), _('Handshake cookie packet type header.'));
-        o.datatype = 'string';
-        o.placeholder = '3';
-        o.optional = true;
+		o = s.taboption('amneziawg', form.Value, 'awg_h3', _('H3'), _('Handshake cookie packet type header.'));
+		o.datatype = 'string';
+		o.placeholder = '3';
+		o.optional = true;
 
-        o = s.taboption('amneziawg', form.Value, 'awg_h4', _('H4'), _('Transport packet type header.'));
-        o.datatype = 'string';
-        o.placeholder = '4';
-        o.optional = true;
+		o = s.taboption('amneziawg', form.Value, 'awg_h4', _('H4'), _('Transport packet type header.'));
+		o.datatype = 'string';
+		o.placeholder = '4';
+		o.optional = true;
 		
 		o = s.taboption('amneziawg', form.Value, 'awg_i1', _('I1'), _('First special junk packet signature.'));
-        o.datatype = 'string';
-        o.optional = true;
+		o.datatype = 'string';
+		o.optional = true;
 		
 		o = s.taboption('amneziawg', form.Value, 'awg_i2', _('I2'), _('Second special junk packet signature.'));
-        o.datatype = 'string';
-        o.optional = true;
+		o.datatype = 'string';
+		o.optional = true;
 		
 		o = s.taboption('amneziawg', form.Value, 'awg_i3', _('I3'), _('Third special junk packet signature.'));
-        o.datatype = 'string';
-        o.optional = true;
+		o.datatype = 'string';
+		o.optional = true;
 		
 		o = s.taboption('amneziawg', form.Value, 'awg_i4', _('I4'), _('Fourth special junk packet signature.'));
-        o.datatype = 'string';
-        o.optional = true;
+		o.datatype = 'string';
+		o.optional = true;
 		
 		o = s.taboption('amneziawg', form.Value, 'awg_i5', _('I5'), _('Fifth special junk packet signature.'));
-        o.datatype = 'string';
-        o.optional = true;
+		o.datatype = 'string';
+		o.optional = true;
 
 		// -- peers -----------------------------------------------------------------------
 
@@ -301,9 +301,9 @@ return network.registerProtocol('amneziawg', {
 
 		ss.handleDropConfig = function(mode, ev) {
 			var file = ev.dataTransfer.files[0],
-			    nodes = ev.currentTarget,
-			    input = nodes.querySelector('textarea'),
-			    reader = new FileReader();
+				nodes = ev.currentTarget,
+				input = nodes.querySelector('textarea'),
+				reader = new FileReader();
 
 			if (file) {
 				reader.onload = function(rev) {
@@ -320,9 +320,9 @@ return network.registerProtocol('amneziawg', {
 
 		ss.parseConfig = function(data) {
 			var lines = String(data).split(/(\r?\n)+/),
-			    section = null,
-			    config = { peers: [] },
-			    s;
+				section = null,
+				config = { peers: [] },
+				s;
 
 			for (var i = 0; i < lines.length; i++) {
 				var line = lines[i].replace(/#.*$/, '').trim();
@@ -337,7 +337,7 @@ return network.registerProtocol('amneziawg', {
 				}
 				else if (section && line.match(/^(\w+)\s*=\s*(.+)$/)) {
 					var key = RegExp.$1,
-					    val = RegExp.$2.trim();
+						val = RegExp.$2.trim();
 
 					if (val.length)
 						s[section + '_' + key.toLowerCase()] = val;
@@ -407,9 +407,9 @@ return network.registerProtocol('amneziawg', {
 
 		ss.handleApplyConfig = function(mode, nodes, comment, ev) {
 			var input = nodes.querySelector('textarea').value,
-			    error = nodes.querySelector('.alert-message'),
-			    cancel = nodes.nextElementSibling.querySelector('.btn'),
-			    config = this.parseConfig(input);
+				error = nodes.querySelector('.alert-message'),
+				cancel = nodes.nextElementSibling.querySelector('.btn'),
+				config = this.parseConfig(input);
 
 			if (typeof(config) == 'string') {
 				error.firstChild.data = _('Cannot parse configuration: %s').format(config);
@@ -508,8 +508,8 @@ return network.registerProtocol('amneziawg', {
 
 		ss.handleConfigImport = function(mode) {
 			var mapNode = ss.getActiveModalMap(),
-			    headNode = mapNode.parentNode.querySelector('h4'),
-			    parent = this.map;
+				headNode = mapNode.parentNode.querySelector('h4'),
+				parent = this.map;
 
 			var nodes = E('div', {
 				'dragover': this.handleDragConfig,
@@ -606,11 +606,11 @@ return network.registerProtocol('amneziawg', {
 		o.width = '30%';
 		o.textvalue = function(section_id) {
 			var dis = ss.getOption('disabled'),
-			    pub = ss.getOption('public_key'),
-			    prv = ss.getOption('private_key'),
-			    psk = ss.getOption('preshared_key'),
-			    name = this.cfgvalue(section_id),
-			    key = pub.cfgvalue(section_id);
+				pub = ss.getOption('public_key'),
+				prv = ss.getOption('private_key'),
+				psk = ss.getOption('preshared_key'),
+				name = this.cfgvalue(section_id),
+				key = pub.cfgvalue(section_id);
 
 			var desc = [
 				E('p', [
@@ -662,7 +662,7 @@ return network.registerProtocol('amneziawg', {
 
 		function handleKeyChange(ev, section_id, value) {
 			var prv = this.section.getUIElement(section_id, 'private_key'),
-			    btn = this.map.findElement('.btn.qr-code');
+				btn = this.map.findElement('.btn.qr-code');
 
 			btn.disabled = (!prv.isValid() || !prv.getValue());
 		}
@@ -693,7 +693,7 @@ return network.registerProtocol('amneziawg', {
 				'class': 'btn',
 				'click': ui.createHandlerFn(this, function(section_id, ev) {
 					var psk = this.section.getUIElement(section_id, 'preshared_key'),
-					    map = this.map;
+						map = this.map;
 
 					return generatePsk().then(function(key) {
 						psk.setValue(key);
@@ -793,10 +793,10 @@ return network.registerProtocol('amneziawg', {
 				i3 = s.formvalue(s.section, 'awg_i3'),
 				i4 = s.formvalue(s.section, 'awg_i4'),
 				i5 = s.formvalue(s.section, 'awg_i5'),
-			    prv = this.section.formvalue(section_id, 'private_key'),
-			    psk = this.section.formvalue(section_id, 'preshared_key'),
-			    eport = this.section.formvalue(section_id, 'endpoint_port'),
-			    keep = this.section.formvalue(section_id, 'persistent_keepalive');
+				prv = this.section.formvalue(section_id, 'private_key'),
+				psk = this.section.formvalue(section_id, 'preshared_key'),
+				eport = this.section.formvalue(section_id, 'endpoint_port'),
+				keep = this.section.formvalue(section_id, 'persistent_keepalive');
 
 			// If endpoint is IPv6 we must escape it with []
 			if (endpoint.indexOf(':') > 0) {
@@ -837,9 +837,9 @@ return network.registerProtocol('amneziawg', {
 
 		o.handleGenerateQR = function(section_id, ev) {
 			var mapNode = ss.getActiveModalMap(),
-			    headNode = mapNode.parentNode.querySelector('h4'),
-			    configGenerator = this.createPeerConfig.bind(this, section_id),
-			    parent = this.map,
+				headNode = mapNode.parentNode.querySelector('h4'),
+				configGenerator = this.createPeerConfig.bind(this, section_id),
+				parent = this.map,
 				eips = this.section.formvalue(section_id, 'allowed_ips');
 
 			return Promise.all([
@@ -889,11 +889,11 @@ return network.registerProtocol('amneziawg', {
 
 				function handleConfigChange(ev, section_id, value) {
 					var code = this.map.findElement('.qr-code'),
-					    conf = this.map.findElement('.client-config'),
-					    endpoint = this.section.getUIElement(section_id, 'endpoint'),
-					    ips = this.section.getUIElement(section_id, 'allowed_ips');
-					    eips = this.section.getUIElement(section_id, 'addresses');
-					    dns = this.section.getUIElement(section_id, 'dns_servers');
+						conf = this.map.findElement('.client-config'),
+						endpoint = this.section.getUIElement(section_id, 'endpoint'),
+						ips = this.section.getUIElement(section_id, 'allowed_ips');
+						eips = this.section.getUIElement(section_id, 'addresses');
+						dns = this.section.getUIElement(section_id, 'dns_servers');
 
 					if (this.isValid(section_id)) {
 						conf.firstChild.data = configGenerator(endpoint.getValue(), ips.getValue(), eips.getValue(), dns.getValue());
@@ -943,7 +943,7 @@ return network.registerProtocol('amneziawg', {
 							'style': 'flex:1;white-space:pre;overflow:auto',
 							'click': function(ev) {
 								var sel = window.getSelection(),
-								    range = document.createRange();
+									range = document.createRange();
 
 								range.selectNodeContents(ev.currentTarget);
 
