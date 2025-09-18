@@ -53,21 +53,21 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:199
 msgid "AmneziaWG Settings"
-msgstr ""
+msgstr "Настройки AmneziaWG"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:120
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:165
 msgid "AmneziaWG Status"
-msgstr ""
+msgstr "Состояние AmneziaWG"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:105
 #: ../luci/modules/luci-compat/luasrc/model/network/proto_amneziawg.lua:9
 msgid "AmneziaWG VPN"
-msgstr ""
+msgstr "AmneziaWG ВПН"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:624
 msgid "AmneziaWG peer is disabled"
-msgstr ""
+msgstr "Узел AmneziaWG отключён"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:980
 msgid "Back to peer configuration"
@@ -95,7 +95,7 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:228
 msgid "Cookie reply packet junk header size."
-msgstr ""
+msgstr "Размер мусорного заголовка пакета ответа cookie."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:917
 msgid "DNS Servers"
@@ -131,7 +131,7 @@ msgstr ""
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:626
 msgctxt "Label indicating that AmneziaWG peer is disabled"
 msgid "Disabled"
-msgstr ""
+msgstr "Отключено"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:45
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:66
@@ -143,6 +143,8 @@ msgid ""
 "Drag or paste a valid <em>*.conf</em> file below to configure the local "
 "AmneziaWG interface."
 msgstr ""
+"Перетащите или вставьте правильный файл <em>*.conf</em> ниже, чтобы "
+"настроить локальный интерфейс AmneziaWG."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:293
 msgid "Edit peer"
@@ -151,6 +153,8 @@ msgstr ""
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:597
 msgid "Enable / Disable peer. Restart amneziawg interface to apply changes."
 msgstr ""
+"Включить/выключить узел. Перезапустите интерфейс AmneziaWG, чтобы применить "
+"изменения."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:55
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:75
@@ -175,7 +179,7 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:274
 msgid "Fifth special junk packet signature."
-msgstr ""
+msgstr "Сигнатура пятого special junk пакета."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:187
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:39
@@ -184,11 +188,11 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:258
 msgid "First special junk packet signature."
-msgstr ""
+msgstr "Сигнатура первого special junk пакета."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:270
 msgid "Fourth special junk packet signature."
-msgstr ""
+msgstr "Сигнатура четвертого special junk пакета."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:199
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:281
@@ -196,6 +200,8 @@ msgid ""
 "Further information about AmneziaWG interfaces and peers at <a href='https://"
 "docs.amnezia.org/documentation/amnezia-wg'>amnezia.org</a>."
 msgstr ""
+"Дополнительная информация об AmneziaWG интерфейсах и узлах приведена по "
+"адресу <a href='https://docs.amnezia.org/documentation/amnezia-wg'>amnezia.org</a>."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:965
 msgid "Generate configuration"
@@ -215,7 +221,7 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:773
 msgid "Generates a configuration suitable for import on a AmneziaWG peer"
-msgstr ""
+msgstr "Создает конфигурацию, подходящую для импорта на узле AmneziaWG"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:939
 msgid "Generating QR code…"
@@ -243,23 +249,23 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:248
 msgid "Handshake cookie packet type header."
-msgstr ""
+msgstr "Тип заголовка пакета под нагрузкой."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:218
 msgid "Handshake initiation packet junk header size."
-msgstr ""
+msgstr "Размер мусорного заголовка пакета инициации рукопожатия."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:238
 msgid "Handshake initiation packet type header."
-msgstr ""
+msgstr "Тип заголовка пакета инициации рукопожатия."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:223
 msgid "Handshake response packet junk header size."
-msgstr ""
+msgstr "Размер мусорного заголовка пакета ответа на рукопожатие."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:243
 msgid "Handshake response packet type header."
-msgstr ""
+msgstr "Тип заголовка пакета ответа на рукопожатие."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:258
 msgid "I1"
@@ -322,12 +328,12 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:174
 msgid "Imports settings from an existing AmneziaWG configuration file"
-msgstr ""
+msgstr "Импортирует настройки из существующего файла конфигурации AmneziaWG"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:125
 msgctxt "AmneziaWG instance heading"
 msgid "Instance \"%h\""
-msgstr ""
+msgstr "Экземпляр «%h»"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:34
 msgid "Instance Details"
@@ -356,15 +362,15 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:203
 msgid "Junk packet count."
-msgstr ""
+msgstr "Количество мусорных пакетов."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:213
 msgid "Junk packet maximum size."
-msgstr ""
+msgstr "Максимальный размер мусорного пакета."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:208
 msgid "Junk packet minimum size."
-msgstr ""
+msgstr "Минимальный размер мусорного пакета."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:60
 msgid "Keep-Alive"
@@ -408,11 +414,11 @@ msgstr ""
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:16
 msgctxt "No AmneziaWG peer handshake yet"
 msgid "Never"
-msgstr ""
+msgstr "Никогда"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:148
 msgid "No AmneziaWG interfaces configured."
-msgstr ""
+msgstr "Интерфейсы AmneziaWG не настроены."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:171
 msgid "No Host Routes"
@@ -423,6 +429,9 @@ msgid ""
 "No fixed interface listening port defined, peers might not be able to "
 "initiate connections to this AmneziaWG instance!"
 msgstr ""
+"Не определен фиксированный порт прослушивания интерфейса, поэтому узлы могут "
+"оказаться не в состоянии инициировать соединения с этим экземпляром "
+"AmneziaWG!"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:84
 msgid "No peers connected"
@@ -484,6 +493,9 @@ msgid ""
 "code if available. It can be removed after the configuration has been "
 "exported."
 msgstr ""
+"Необязательно. Закрытый ключ узла AmneziaWG. Ключ не требуется для "
+"установления соединения, но позволяет сгенерировать конфигурацию узла или QR-"
+"код, если он доступен. Он может быть удален после экспорта конфигурации."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:765
 msgid ""
@@ -506,7 +518,7 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:528
 msgid "Paste or drag AmneziaWG peer configuration (wg0.conf) file…"
-msgstr ""
+msgstr "Вставьте или перетащите файл конфигурации узлов AmneziaWG (wg0.conf)…"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:521
 msgid ""
@@ -514,10 +526,13 @@ msgid ""
 "another system below to create a matching peer entry allowing that system to "
 "connect to the local AmneziaWG interface."
 msgstr ""
+"Вставьте или перетащите конфигурацию AmneziaWG (обычно <em>wg0.conf</em>) из "
+"другой системы ниже, чтобы создать соответствующую запись узла, позволяющую "
+"этой системе подключиться к локальному интерфейсу AmneziaWG."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:527
 msgid "Paste or drag supplied AmneziaWG configuration file…"
-msgstr ""
+msgstr "Вставьте или перетащите имеющийся файл конфигурации AmneziaWG…"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:74
 msgid "Peer"
@@ -589,7 +604,7 @@ msgstr ""
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:101
 msgctxt "Tooltip displaying full AmneziaWG peer public key"
 msgid "Public key: %h"
-msgstr ""
+msgstr "Публичный ключ: %h"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:373
 msgid "PublicKey setting is invalid"
@@ -601,7 +616,7 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:167
 msgid "Recommended. IP addresses of the AmneziaWG interface."
-msgstr ""
+msgstr "Рекомендуемый. IP адреса интерфейса AmneziaWG."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:137
 msgid "Required. Base64-encoded private key for this interface."
@@ -609,7 +624,7 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:670
 msgid "Required. Public key of the AmneziaWG peer."
-msgstr ""
+msgstr "Обязательно. Публичный ключ AmneziaWG узла."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:741
 msgid "Route Allowed IPs"
@@ -633,7 +648,7 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:262
 msgid "Second special junk packet signature."
-msgstr ""
+msgstr "Сигнатура второго special junk пакета."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:885
 msgid ""
@@ -650,7 +665,7 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:266
 msgid "Third special junk packet signature."
-msgstr ""
+msgstr "Сигнатура третьего special junk пакета."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:522
 msgid ""
@@ -658,6 +673,10 @@ msgid ""
 "provider supplied) configuration file, use the <strong><a class=\"full-"
 "import\" href=\"#\">configuration import</a></strong> instead."
 msgstr ""
+"Чтобы полностью настроить локальный интерфейс AmneziaWG из существующего "
+"(например, предоставленного провайдером) файла конфигурации, используйте "
+"вместо этого <strong><a class=\"full-import\" href=\"#\">импорт "
+"конфигурации</a></strong>."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:58
 msgid "Transmitted Data"
@@ -665,11 +684,11 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:233
 msgid "Transport packet junk header size."
-msgstr ""
+msgstr "Размер мусорного заголовка транспортного пакета."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:253
 msgid "Transport packet type header."
-msgstr ""
+msgstr "Тип заголовка транспортного пакета."
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:617
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:97
