@@ -1,1 +1,689 @@
-.
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:26
+msgid "%dh ago"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:24
+msgid "%dm ago"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:22
+msgid "%ds ago"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:717
+msgctxt "Label indicating further amount of allowed ips"
+msgid "+ %d more"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:291
+msgid "Add peer"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:352
+msgid "Address setting is invalid"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:922
+msgid "Addresses"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:706
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:911
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:56
+msgid "Allowed IPs"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:383
+msgid "AllowedIPs setting is invalid"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/root/usr/share/luci/menu.d/luci-proto-amneziawg.json:3
+msgid "AmneziaWG"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:199
+msgid "AmneziaWG Settings"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:120
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:165
+msgid "AmneziaWG Status"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:105
+#: ../luci/modules/luci-compat/luasrc/model/network/proto_amneziawg.lua:9
+msgid "AmneziaWG VPN"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:624
+msgid "AmneziaWG peer is disabled"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:980
+msgid "Back to peer configuration"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:144
+msgid "Base64-encoded public key of this interface for sharing."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:569
+msgid "Cancel"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:415
+msgid "Cannot parse configuration: %s"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:772
+msgid "Configuration Export"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:906
+msgid "Connection endpoint"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:228
+msgid "Cookie reply packet junk header size."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:917
+msgid "DNS Servers"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:917
+msgid ""
+"DNS servers for the remote clients using this tunnel to your openwrt device. "
+"Some wireguard clients require this to be set."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:360
+msgid "DNS setting is invalid"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:76
+msgid "Data Received"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:77
+msgid "Data Transmitted"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:602
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:53
+msgid "Description"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:597
+msgid "Disabled"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:626
+msgctxt "Label indicating that AmneziaWG peer is disabled"
+msgid "Disabled"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:45
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:66
+msgid "Dismiss"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:519
+msgid ""
+"Drag or paste a valid <em>*.conf</em> file below to configure the local "
+"AmneziaWG interface."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:293
+msgid "Edit peer"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:597
+msgid "Enable / Disable peer. Restart amneziawg interface to apply changes."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:55
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:75
+msgid "Endpoint"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:744
+msgid "Endpoint Host"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:760
+msgid "Endpoint Port"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:393
+msgid "Endpoint setting is invalid"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:156
+msgid "Error getting PublicKey"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:274
+msgid "Fifth special junk packet signature."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:187
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:39
+msgid "Firewall Mark"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:258
+msgid "First special junk packet signature."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:270
+msgid "Fourth special junk packet signature."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:199
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:281
+msgid ""
+"Further information about AmneziaWG interfaces and peers at <a href='https://"
+"docs.amnezia.org/documentation/amnezia-wg'>amnezia.org</a>."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:965
+msgid "Generate configuration"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:1005
+msgid "Generate configuration…"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:95
+msgid "Generate new key pair"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:703
+msgid "Generate preshared key"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:773
+msgid "Generates a configuration suitable for import on a AmneziaWG peer"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:939
+msgid "Generating QR code…"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/root/usr/share/rpcd/acl.d/luci-amneziawg.json:3
+msgid "Grant access to LuCI AmneziaWG procedures"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:238
+msgid "H1"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:243
+msgid "H2"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:248
+msgid "H3"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:253
+msgid "H4"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:248
+msgid "Handshake cookie packet type header."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:218
+msgid "Handshake initiation packet junk header size."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:238
+msgid "Handshake initiation packet type header."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:223
+msgid "Handshake response packet junk header size."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:243
+msgid "Handshake response packet type header."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:258
+msgid "I1"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:262
+msgid "I2"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:266
+msgid "I3"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:270
+msgid "I4"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:274
+msgid "I5"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:167
+msgid "IP Addresses"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:922
+msgid ""
+"IP addresses for the peer to use inside the tunnel. Some clients require "
+"this setting."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:911
+msgid ""
+"IP addresses that are allowed inside the tunnel. The peer will accept "
+"tunnelled packets with source IP addresses matching this list and route back "
+"packets with matching destination IP."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:560
+msgid "Import as peer"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:174
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:560
+msgid "Import configuration"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:588
+msgid "Import configuration as peer…"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:574
+msgid "Import settings"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:460
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:487
+msgid "Imported peer configuration"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:174
+msgid "Imports settings from an existing AmneziaWG configuration file"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:125
+msgctxt "AmneziaWG instance heading"
+msgid "Instance \"%h\""
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:34
+msgid "Instance Details"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:38
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:41
+msgid "Invalid Base64 key string"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:191
+msgid "Invalid hexadecimal value"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:203
+msgid "Jc"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:213
+msgid "Jmax"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:208
+msgid "Jmin"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:203
+msgid "Junk packet count."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:213
+msgid "Junk packet maximum size."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:208
+msgid "Junk packet minimum size."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:60
+msgid "Keep-Alive"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:634
+msgctxt "Label indicating that AmneziaWG peer lacks public key"
+msgid "Key missing"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:59
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:78
+msgid "Latest Handshake"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:162
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:38
+msgid "Listen Port"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:367
+msgid "ListenPort setting is invalid"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:175
+msgid "Load configuration…"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:167
+msgid "Loading data…"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:182
+msgid "MTU"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:36
+msgid "Name"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:16
+msgctxt "No AmneziaWG peer handshake yet"
+msgid "Never"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:148
+msgid "No AmneziaWG interfaces configured."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:171
+msgid "No Host Routes"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:987
+msgid ""
+"No fixed interface listening port defined, peers might not be able to "
+"initiate connections to this AmneziaWG instance!"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:84
+msgid "No peers connected"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:594
+msgid "No peers defined yet."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:187
+msgid ""
+"Optional. 32-bit mark for packets during firewall processing. Enter value in "
+"hex, starting with <code>0x</code>."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:684
+msgid ""
+"Optional. Base64-encoded preshared key. Adds in an additional layer of "
+"symmetric-key cryptography for post-quantum resistance."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:741
+msgid "Optional. Create routes for Allowed IPs for this peer."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:602
+msgid "Optional. Description of peer."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:171
+msgid "Optional. Do not create host routes to peers."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:744
+msgid ""
+"Optional. Host of peer. Names are resolved prior to bringing up the "
+"interface."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:706
+msgid ""
+"Optional. IP addresses and prefixes that this peer is allowed to use inside "
+"the tunnel. Usually the peer's tunnel IP addresses and the networks the peer "
+"routes through the tunnel."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:182
+msgid "Optional. Maximum Transmission Unit of tunnel interface."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:760
+msgid "Optional. Port of peer."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:675
+msgid ""
+"Optional. Private key of the AmneziaWG peer. The key is not required for "
+"establishing a connection but allows generating a peer configuration or QR "
+"code if available. It can be removed after the configuration has been "
+"exported."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:765
+msgid ""
+"Optional. Seconds between keep alive messages. Default is 0 (disabled). "
+"Recommended value if this device is behind a NAT is 25."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:162
+msgid "Optional. UDP port used for outgoing and incoming packets."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:423
+msgid "Overwrite the current settings with the imported configuration?"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:656
+msgctxt "Label indicating that AmneziaWG peer uses a PSK"
+msgid "PSK"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:528
+msgid "Paste or drag AmneziaWG peer configuration (wg0.conf) file…"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:521
+msgid ""
+"Paste or drag a AmneziaWG configuration (commonly <em>wg0.conf</em>) from "
+"another system below to create a matching peer entry allowing that system to "
+"connect to the local AmneziaWG interface."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:527
+msgid "Paste or drag supplied AmneziaWG configuration file…"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:74
+msgid "Peer"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:51
+msgid "Peer Details"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:281
+msgid "Peers"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:765
+msgid "Persistent Keep Alive"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:402
+msgid "PersistentKeepAlive setting is invalid"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:137
+msgctxt "AmneziaWG listen port"
+msgid "Port %d"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:684
+msgid "Preshared Key"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:655
+msgid "Preshared key in use"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:376
+msgid "PresharedKey setting is invalid"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:650
+msgctxt "Label indicating that AmneziaWG peer private key is stored"
+msgid "Private"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:137
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:675
+msgid "Private Key"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:649
+msgid "Private key present"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:364
+msgid "PrivateKey setting is missing or invalid"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:144
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:670
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:37
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:54
+msgid "Public Key"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:632
+msgid "Public key is missing"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:641
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:101
+msgctxt "Tooltip displaying full AmneziaWG peer public key"
+msgid "Public key: %h"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:373
+msgid "PublicKey setting is invalid"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:57
+msgid "Received Data"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:167
+msgid "Recommended. IP addresses of the AmneziaWG interface."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:137
+msgid "Required. Base64-encoded private key for this interface."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:670
+msgid "Required. Public key of the AmneziaWG peer."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:741
+msgid "Route Allowed IPs"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:218
+msgid "S1"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:223
+msgid "S2"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:228
+msgid "S3"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:233
+msgid "S4"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:262
+msgid "Second special junk packet signature."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:885
+msgid ""
+"The generated configuration can be imported into a WireGuard client "
+"application to set up a connection towards this device."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:906
+msgid ""
+"The public hostname or IP address of this system the peer should connect to. "
+"This usually is a static public IP address, a static hostname or a DDNS "
+"domain."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:266
+msgid "Third special junk packet signature."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:522
+msgid ""
+"To configure fully the local AmneziaWG interface from an existing (e.g. "
+"provider supplied) configuration file, use the <strong><a class=\"full-"
+"import\" href=\"#\">configuration import</a></strong> instead."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:58
+msgid "Transmitted Data"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:233
+msgid "Transport packet junk header size."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:253
+msgid "Transport packet type header."
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:617
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:97
+msgid "Untitled peer"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:60
+msgctxt "AmneziaWG keep alive interval"
+msgid "every %ds"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:39
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:56
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:60
+msgid "none"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:28
+msgid "over a day ago"
+msgstr ""
+
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:164
+msgid "random"
+msgstr ""
