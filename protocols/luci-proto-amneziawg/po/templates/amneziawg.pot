@@ -54,7 +54,7 @@ msgid "AmneziaWG Status"
 msgstr ""
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:105
-#: ../luci/modules/luci-compat/luasrc/model/network/proto_amneziawg.lua:9
+#: modules/luci-compat/luasrc/model/network/proto_amneziawg.lua:9
 msgid "AmneziaWG VPN"
 msgstr ""
 
