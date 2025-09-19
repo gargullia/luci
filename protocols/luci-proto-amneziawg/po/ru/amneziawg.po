@@ -49,7 +49,7 @@ msgstr ""
 
 #: protocols/luci-proto-amneziawg/root/usr/share/luci/menu.d/luci-proto-amneziawg.json:3
 msgid "AmneziaWG"
-msgstr ""
+msgstr "AmneziaWG (VPN-протокол)"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:199
 msgid "AmneziaWG Settings"
@@ -61,7 +61,7 @@ msgid "AmneziaWG Status"
 msgstr "Состояние AmneziaWG"
 
 #: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:105
-#: ../luci/modules/luci-compat/luasrc/model/network/proto_amneziawg.lua:9
+#: modules/luci-compat/luasrc/model/network/proto_amneziawg.lua:9
 msgid "AmneziaWG VPN"
 msgstr "AmneziaWG ВПН"
 
