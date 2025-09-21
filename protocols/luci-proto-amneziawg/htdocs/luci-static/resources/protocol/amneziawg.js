@@ -10,20 +10,20 @@
 'require uqr';
 
 var generateKey = rpc.declare({
-	object: 'luci.wireguard',
+	object: 'luci.amneziawg',
 	method: 'generateKeyPair',
 	expect: { keys: {} }
 });
 
 var getPublicAndPrivateKeyFromPrivate = rpc.declare({
-	object: 'luci.wireguard',
+	object: 'luci.amneziawg',
 	method: 'getPublicAndPrivateKeyFromPrivate',
 	params: ['privkey'],
 	expect: { keys: {} }
 });
 
 var generatePsk = rpc.declare({
-	object: 'luci.wireguard',
+	object: 'luci.amneziawg',
 	method: 'generatePsk',
 	expect: { psk: '' }
 });
@@ -83,8 +83,8 @@ var cbiKeyPairGenerate = form.DummyValue.extend({
 			'class': 'btn',
 			'click': ui.createHandlerFn(this, function(section_id, ev) {
 				var prv = this.section.getUIElement(section_id, 'private_key'),
-				    pub = this.section.getUIElement(section_id, 'public_key'),
-				    map = this.map;
+					pub = this.section.getUIElement(section_id, 'public_key'),
+					map = this.map;
 
 				return generateKey().then(function(keypair) {
 					prv.setValue(keypair.priv);
@@ -100,9 +100,9 @@ function handleWindowDragDropIgnore(ev) {
 	ev.preventDefault()
 }
 
-return network.registerProtocol('wireguard', {
+return network.registerProtocol('amneziawg', {
 	getI18n: function() {
-		return _('WireGuard VPN');
+		return _('AmneziaWG VPN');
 	},
 
 	getIfname: function() {
@@ -110,7 +110,7 @@ return network.registerProtocol('wireguard', {
 	},
 
 	getPackageName: function() {
-		return 'wireguard-tools';
+		return 'amneziawg-tools';
 	},
 
 	isFloating: function() {
@@ -164,14 +164,14 @@ return network.registerProtocol('wireguard', {
 		o.placeholder = _('random');
 		o.optional = true;
 
-		o = s.taboption('general', form.DynamicList, 'addresses', _('IP Addresses'), _('Recommended. IP addresses of the WireGuard interface.'));
+		o = s.taboption('general', form.DynamicList, 'addresses', _('IP Addresses'), _('Recommended. IP addresses of the AmneziaWG interface.'));
 		o.datatype = 'ipaddr';
 		o.optional = true;
 
 		o = s.taboption('general', form.Flag, 'nohostroute', _('No Host Routes'), _('Optional. Do not create host routes to peers.'));
 		o.optional = true;
 
-		o = s.taboption('general', form.Button, '_import', _('Import configuration'), _('Imports settings from an existing WireGuard configuration file'));
+		o = s.taboption('general', form.Button, '_import', _('Import configuration'), _('Imports settings from an existing AmneziaWG configuration file'));
 		o.inputtitle = _('Load configuration…');
 		o.onclick = function() {
 			return ss.handleConfigImport('full');
@@ -193,18 +193,97 @@ return network.registerProtocol('wireguard', {
 			return true;
 		};
 
-		o = s.taboption('advanced', form.DynamicList, 'ip6prefix', _('IPv6 routed prefix'), _('This is the prefix routed to you by your provider for use by clients'));
-		o.datatype = 'cidr6';
+		// AmneziaWG
+
+		try {
+			s.tab('amneziawg', _('AmneziaWG Settings'), _('Further information about AmneziaWG interfaces and peers at <a href=\'https://docs.amnezia.org/documentation/amnezia-wg\'>amnezia.org</a>.'));
+		}
+		catch(e) {}
+
+		o = s.taboption('amneziawg', form.Value, 'awg_jc', _('Jc'), _('Junk packet count.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
+
+		o = s.taboption('amneziawg', form.Value, 'awg_jmin', _('Jmin'), _('Junk packet minimum size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
+
+		o = s.taboption('amneziawg', form.Value, 'awg_jmax', _('Jmax'), _('Junk packet maximum size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
+
+		o = s.taboption('amneziawg', form.Value, 'awg_s1', _('S1'), _('Handshake initiation packet junk header size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
+
+		o = s.taboption('amneziawg', form.Value, 'awg_s2', _('S2'), _('Handshake response packet junk header size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
+		
+		o = s.taboption('amneziawg', form.Value, 'awg_s3', _('S3'), _('Cookie reply packet junk header size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
+		
+		o = s.taboption('amneziawg', form.Value, 'awg_s4', _('S4'), _('Transport packet junk header size.'));
+		o.datatype = 'uinteger';
+		o.placeholder = '0';
+		o.optional = true;
+
+		o = s.taboption('amneziawg', form.Value, 'awg_h1', _('H1'), _('Handshake initiation packet type header.'));
+		o.datatype = 'string';
+		o.placeholder = '1';
+		o.optional = true;
+
+		o = s.taboption('amneziawg', form.Value, 'awg_h2', _('H2'), _('Handshake response packet type header.'));
+		o.datatype = 'string';
+		o.placeholder = '2';
+		o.optional = true;
+
+		o = s.taboption('amneziawg', form.Value, 'awg_h3', _('H3'), _('Handshake cookie packet type header.'));
+		o.datatype = 'string';
+		o.placeholder = '3';
+		o.optional = true;
+
+		o = s.taboption('amneziawg', form.Value, 'awg_h4', _('H4'), _('Transport packet type header.'));
+		o.datatype = 'string';
+		o.placeholder = '4';
+		o.optional = true;
+		
+		o = s.taboption('amneziawg', form.Value, 'awg_i1', _('I1'), _('First special junk packet signature.'));
+		o.datatype = 'string';
+		o.optional = true;
+		
+		o = s.taboption('amneziawg', form.Value, 'awg_i2', _('I2'), _('Second special junk packet signature.'));
+		o.datatype = 'string';
+		o.optional = true;
+		
+		o = s.taboption('amneziawg', form.Value, 'awg_i3', _('I3'), _('Third special junk packet signature.'));
+		o.datatype = 'string';
+		o.optional = true;
+		
+		o = s.taboption('amneziawg', form.Value, 'awg_i4', _('I4'), _('Fourth special junk packet signature.'));
+		o.datatype = 'string';
+		o.optional = true;
+		
+		o = s.taboption('amneziawg', form.Value, 'awg_i5', _('I5'), _('Fifth special junk packet signature.'));
+		o.datatype = 'string';
+		o.optional = true;
 
 		// -- peers -----------------------------------------------------------------------
 
 		try {
-			s.tab('peers', _('Peers'), _('Further information about WireGuard interfaces and peers at <a href=\'http://wireguard.com\'>wireguard.com</a>.'));
+			s.tab('peers', _('Peers'), _('Further information about AmneziaWG interfaces and peers at <a href=\'https://docs.amnezia.org/documentation/amnezia-wg\'>amnezia.org</a>.'));
 		}
 		catch(e) {}
 
-		o = s.taboption('peers', form.SectionValue, '_peers', form.GridSection, 'wireguard_%s'.format(s.section));
-		o.depends('proto', 'wireguard');
+		o = s.taboption('peers', form.SectionValue, '_peers', form.GridSection, 'amneziawg_%s'.format(s.section));
+		o.depends('proto', 'amneziawg');
 
 		ss = o.subsection;
 		ss.anonymous = true;
@@ -222,9 +301,9 @@ return network.registerProtocol('wireguard', {
 
 		ss.handleDropConfig = function(mode, ev) {
 			var file = ev.dataTransfer.files[0],
-			    nodes = ev.currentTarget,
-			    input = nodes.querySelector('textarea'),
-			    reader = new FileReader();
+				nodes = ev.currentTarget,
+				input = nodes.querySelector('textarea'),
+				reader = new FileReader();
 
 			if (file) {
 				reader.onload = function(rev) {
@@ -241,9 +320,9 @@ return network.registerProtocol('wireguard', {
 
 		ss.parseConfig = function(data) {
 			var lines = String(data).split(/(\r?\n)+/),
-			    section = null,
-			    config = { peers: [] },
-			    s;
+				section = null,
+				config = { peers: [] },
+				s;
 
 			for (var i = 0; i < lines.length; i++) {
 				var line = lines[i].replace(/#.*$/, '').trim();
@@ -258,7 +337,7 @@ return network.registerProtocol('wireguard', {
 				}
 				else if (section && line.match(/^(\w+)\s*=\s*(.+)$/)) {
 					var key = RegExp.$1,
-					    val = RegExp.$2.trim();
+						val = RegExp.$2.trim();
 
 					if (val.length)
 						s[section + '_' + key.toLowerCase()] = val;
@@ -328,9 +407,9 @@ return network.registerProtocol('wireguard', {
 
 		ss.handleApplyConfig = function(mode, nodes, comment, ev) {
 			var input = nodes.querySelector('textarea').value,
-			    error = nodes.querySelector('.alert-message'),
-			    cancel = nodes.nextElementSibling.querySelector('.btn'),
-			    config = this.parseConfig(input);
+				error = nodes.querySelector('.alert-message'),
+				cancel = nodes.nextElementSibling.querySelector('.btn'),
+				config = this.parseConfig(input);
 
 			if (typeof(config) == 'string') {
 				error.firstChild.data = _('Cannot parse configuration: %s').format(config);
@@ -349,15 +428,31 @@ return network.registerProtocol('wireguard', {
 					s.getOption('public_key').getUIElement(s.section).setValue(keypair.pub);
 					s.getOption('listen_port').getUIElement(s.section).setValue(config.interface_listenport || '');
 					s.getOption('addresses').getUIElement(s.section).setValue(config.interface_address);
+					s.getOption('awg_jc').getUIElement(s.section).setValue(config.interface_jc || '');
+					s.getOption('awg_jmin').getUIElement(s.section).setValue(config.interface_jmin || '');
+					s.getOption('awg_jmax').getUIElement(s.section).setValue(config.interface_jmax || '');
+					s.getOption('awg_s1').getUIElement(s.section).setValue(config.interface_s1 || '');
+					s.getOption('awg_s2').getUIElement(s.section).setValue(config.interface_s2 || '');
+					s.getOption('awg_s3').getUIElement(s.section).setValue(config.interface_s3 || '');
+					s.getOption('awg_s4').getUIElement(s.section).setValue(config.interface_s4 || '');
+					s.getOption('awg_h1').getUIElement(s.section).setValue(config.interface_h1 || '');
+					s.getOption('awg_h2').getUIElement(s.section).setValue(config.interface_h2 || '');
+					s.getOption('awg_h3').getUIElement(s.section).setValue(config.interface_h3 || '');
+					s.getOption('awg_h4').getUIElement(s.section).setValue(config.interface_h4 || '');
+					s.getOption('awg_i1').getUIElement(s.section).setValue(config.interface_i1 || '');
+					s.getOption('awg_i2').getUIElement(s.section).setValue(config.interface_i2 || '');
+					s.getOption('awg_i3').getUIElement(s.section).setValue(config.interface_i3 || '');
+					s.getOption('awg_i4').getUIElement(s.section).setValue(config.interface_i4 || '');
+					s.getOption('awg_i5').getUIElement(s.section).setValue(config.interface_i5 || '');
 
 					if (config.interface_dns)
 						s.getOption('dns').getUIElement(s.section).setValue(config.interface_dns);
 
 					for (var i = 0; i < config.peers.length; i++) {
 						var pconf = config.peers[i];
-						var sid = uci.add('network', 'wireguard_' + s.section);
+						var sid = uci.add('network', 'amneziawg_' + s.section);
 
-						uci.sections('network', 'wireguard_' + s.section, function(peer) {
+						uci.sections('network', 'amneziawg_' + s.section, function(peer) {
 							if (peer.public_key == pconf.peer_publickey)
 								uci.remove('network', peer['.name']);
 						});
@@ -381,10 +476,10 @@ return network.registerProtocol('wireguard', {
 			}
 			else {
 				return getPublicAndPrivateKeyFromPrivate(config.interface_privatekey).then(function(keypair) {
-					var sid = uci.add('network', 'wireguard_' + s.section);
+					var sid = uci.add('network', 'amneziawg_' + s.section);
 					var pub = s.formvalue(s.section, 'public_key');
 
-					uci.sections('network', 'wireguard_' + s.section, function(peer) {
+					uci.sections('network', 'amneziawg_' + s.section, function(peer) {
 						if (peer.public_key == keypair.pub)
 							uci.remove('network', peer['.name']);
 					});
@@ -413,24 +508,24 @@ return network.registerProtocol('wireguard', {
 
 		ss.handleConfigImport = function(mode) {
 			var mapNode = ss.getActiveModalMap(),
-			    headNode = mapNode.parentNode.querySelector('h4'),
-			    parent = this.map;
+				headNode = mapNode.parentNode.querySelector('h4'),
+				parent = this.map;
 
 			var nodes = E('div', {
 				'dragover': this.handleDragConfig,
 				'drop': this.handleDropConfig.bind(this, mode)
 			}, [
 				E([], (mode == 'full') ? [
-					E('p', _('Drag or paste a valid <em>*.conf</em> file below to configure the local WireGuard interface.'))
+					E('p', _('Drag or paste a valid <em>*.conf</em> file below to configure the local AmneziaWG interface.'))
 				] : [
-					E('p', _('Paste or drag a WireGuard configuration (commonly <em>wg0.conf</em>) from another system below to create a matching peer entry allowing that system to connect to the local WireGuard interface.')),
-					E('p', _('To configure fully the local WireGuard interface from an existing (e.g. provider supplied) configuration file, use the <strong><a class="full-import" href="#">configuration import</a></strong> instead.'))
+					E('p', _('Paste or drag a AmneziaWG configuration (commonly <em>wg0.conf</em>) from another system below to create a matching peer entry allowing that system to connect to the local AmneziaWG interface.')),
+					E('p', _('To configure fully the local AmneziaWG interface from an existing (e.g. provider supplied) configuration file, use the <strong><a class="full-import" href="#">configuration import</a></strong> instead.'))
 				]),
 				E('p', [
 					E('textarea', {
 						'placeholder': (mode == 'full')
-							? _('Paste or drag supplied WireGuard configuration file…')
-							: _('Paste or drag WireGuard peer configuration (wg0.conf) file…'),
+							? _('Paste or drag supplied AmneziaWG configuration file…')
+							: _('Paste or drag AmneziaWG peer configuration (wg0.conf) file…'),
 						'style': 'height:5em;width:100%; white-space:pre'
 					})
 				]),
@@ -499,7 +594,7 @@ return network.registerProtocol('wireguard', {
 			return E('em', _('No peers defined yet.'));
 		};
 
-		o = ss.option(form.Flag, 'disabled', _('Disabled'), _('Enable / Disable peer. Restart wireguard interface to apply changes.'));
+		o = ss.option(form.Flag, 'disabled', _('Disabled'), _('Enable / Disable peer. Restart amneziawg interface to apply changes.'));
 		o.editable = true;
 		o.optional = true;
 		o.width = '5%';
@@ -511,11 +606,11 @@ return network.registerProtocol('wireguard', {
 		o.width = '30%';
 		o.textvalue = function(section_id) {
 			var dis = ss.getOption('disabled'),
-			    pub = ss.getOption('public_key'),
-			    prv = ss.getOption('private_key'),
-			    psk = ss.getOption('preshared_key'),
-			    name = this.cfgvalue(section_id),
-			    key = pub.cfgvalue(section_id);
+				pub = ss.getOption('public_key'),
+				prv = ss.getOption('private_key'),
+				psk = ss.getOption('preshared_key'),
+				name = this.cfgvalue(section_id),
+				key = pub.cfgvalue(section_id);
 
 			var desc = [
 				E('p', [
@@ -526,9 +621,9 @@ return network.registerProtocol('wireguard', {
 			if (dis.cfgvalue(section_id) == '1')
 				desc.push(E('span', {
 					'class': 'ifacebadge',
-					'data-tooltip': _('WireGuard peer is disabled')
+					'data-tooltip': _('AmneziaWG peer is disabled')
 				}, [
-					E('em', [ _('Disabled', 'Label indicating that WireGuard peer is disabled') ])
+					E('em', [ _('Disabled', 'Label indicating that AmneziaWG peer is disabled') ])
 				]), ' ');
 
 			if (!key || !pub.isValid(section_id)) {
@@ -536,14 +631,14 @@ return network.registerProtocol('wireguard', {
 					'class': 'ifacebadge',
 					'data-tooltip': _('Public key is missing')
 				}, [
-					E('em', [ _('Key missing', 'Label indicating that WireGuard peer lacks public key') ])
+					E('em', [ _('Key missing', 'Label indicating that AmneziaWG peer lacks public key') ])
 				]));
 			}
 			else {
 				desc.push(
 					E('span', {
 						'class': 'ifacebadge',
-						'data-tooltip': _('Public key: %h', 'Tooltip displaying full WireGuard peer public key').format(key)
+						'data-tooltip': _('Public key: %h', 'Tooltip displaying full AmneziaWG peer public key').format(key)
 					}, [
 						E('code', [ key.replace(/^(.{5}).+(.{6})$/, '$1…$2') ])
 					]),
@@ -552,13 +647,13 @@ return network.registerProtocol('wireguard', {
 						? E('span', {
 							'class': 'ifacebadge',
 							'data-tooltip': _('Private key present')
-						}, [ _('Private', 'Label indicating that WireGuard peer private key is stored') ]) : '',
+						}, [ _('Private', 'Label indicating that AmneziaWG peer private key is stored') ]) : '',
 					' ',
 					(psk.cfgvalue(section_id) && psk.isValid(section_id))
 						? E('span', {
 							'class': 'ifacebadge',
 							'data-tooltip': _('Preshared key in use')
-						}, [ _('PSK', 'Label indicating that WireGuard peer uses a PSK') ]) : ''
+						}, [ _('PSK', 'Label indicating that AmneziaWG peer uses a PSK') ]) : ''
 				);
 			}
 
@@ -567,17 +662,17 @@ return network.registerProtocol('wireguard', {
 
 		function handleKeyChange(ev, section_id, value) {
 			var prv = this.section.getUIElement(section_id, 'private_key'),
-			    btn = this.map.findElement('.btn.qr-code');
+				btn = this.map.findElement('.btn.qr-code');
 
 			btn.disabled = (!prv.isValid() || !prv.getValue());
 		}
 
-		o = ss.option(form.Value, 'public_key', _('Public Key'), _('Required. Public key of the WireGuard peer.'));
+		o = ss.option(form.Value, 'public_key', _('Public Key'), _('Required. Public key of the AmneziaWG peer.'));
 		o.modalonly = true;
 		o.validate = validateBase64;
 		o.onchange = handleKeyChange;
 
-		o = ss.option(form.Value, 'private_key', _('Private Key'), _('Optional. Private key of the WireGuard peer. The key is not required for establishing a connection but allows generating a peer configuration or QR code if available. It can be removed after the configuration has been exported.'));
+		o = ss.option(form.Value, 'private_key', _('Private Key'), _('Optional. Private key of the AmneziaWG peer. The key is not required for establishing a connection but allows generating a peer configuration or QR code if available. It can be removed after the configuration has been exported.'));
 		o.modalonly = true;
 		o.validate = validateBase64;
 		o.onchange = handleKeyChange;
@@ -598,7 +693,7 @@ return network.registerProtocol('wireguard', {
 				'class': 'btn',
 				'click': ui.createHandlerFn(this, function(section_id, ev) {
 					var psk = this.section.getUIElement(section_id, 'preshared_key'),
-					    map = this.map;
+						map = this.map;
 
 					return generatePsk().then(function(key) {
 						psk.setValue(key);
@@ -675,17 +770,33 @@ return network.registerProtocol('wireguard', {
 
 
 		o = ss.option(form.DummyValue, '_keyops', _('Configuration Export'),
-			_('Generates a configuration suitable for import on a WireGuard peer'));
+			_('Generates a configuration suitable for import on a AmneziaWG peer'));
 
 		o.modalonly = true;
 
 		o.createPeerConfig = function(section_id, endpoint, ips, eips, dns) {
 			var pub = s.formvalue(s.section, 'public_key'),
 			    port = s.formvalue(s.section, 'listen_port') || '51820',
-			    prv = this.section.formvalue(section_id, 'private_key'),
-			    psk = this.section.formvalue(section_id, 'preshared_key'),
-			    eport = this.section.formvalue(section_id, 'endpoint_port'),
-			    keep = this.section.formvalue(section_id, 'persistent_keepalive');
+				jc = s.formvalue(s.section, 'awg_jc'),
+				jmin = s.formvalue(s.section, 'awg_jmin'),
+				jmax = s.formvalue(s.section, 'awg_jmax'),
+				s1 = s.formvalue(s.section, 'awg_s1'),
+				s2 = s.formvalue(s.section, 'awg_s2'),
+				s3 = s.formvalue(s.section, 'awg_s3'),
+				s4 = s.formvalue(s.section, 'awg_s4'),
+				h1 = s.formvalue(s.section, 'awg_h1'),
+				h2 = s.formvalue(s.section, 'awg_h2'),
+				h3 = s.formvalue(s.section, 'awg_h3'),
+				h4 = s.formvalue(s.section, 'awg_h4'),
+				i1 = s.formvalue(s.section, 'awg_i1'),
+				i2 = s.formvalue(s.section, 'awg_i2'),
+				i3 = s.formvalue(s.section, 'awg_i3'),
+				i4 = s.formvalue(s.section, 'awg_i4'),
+				i5 = s.formvalue(s.section, 'awg_i5'),
+				prv = this.section.formvalue(section_id, 'private_key'),
+				psk = this.section.formvalue(section_id, 'preshared_key'),
+				eport = this.section.formvalue(section_id, 'endpoint_port'),
+				keep = this.section.formvalue(section_id, 'persistent_keepalive');
 
 			// If endpoint is IPv6 we must escape it with []
 			if (endpoint.indexOf(':') > 0) {
@@ -698,6 +809,22 @@ return network.registerProtocol('wireguard', {
 				eips && eips.length ? 'Address = ' + eips.join(', ') : '# Address not defined',
 				eport ? 'ListenPort = ' + eport : '# ListenPort not defined',
 				dns && dns.length ? 'DNS = ' + dns.join(', ') : '# DNS not defined',
+				jc ? 'Jc = ' + jc : '# Jc not defined',
+				jmin ? 'Jmin = ' + jmin : '# Jmin not defined',
+				jmax ? 'Jmax = ' + jmax : '# Jmax not defined',
+				s1 ? 'S1 = ' + s1 : '# S1 not defined',
+				s2 ? 'S2 = ' + s2 : '# S2 not defined',
+				s3 ? 'S3 = ' + s3 : '# S3 not defined',
+				s4 ? 'S4 = ' + s4 : '# S4 not defined',
+				h1 ? 'H1 = ' + h1 : '# H1 not defined',
+				h2 ? 'H2 = ' + h2 : '# H2 not defined',
+				h3 ? 'H3 = ' + h3 : '# H3 not defined',
+				h4 ? 'H4 = ' + h4 : '# H4 not defined',
+				i1 ? 'I1 = ' + i1 : '# I1 not defined',
+				i2 ? 'I2 = ' + i2 : '# I2 not defined',
+				i3 ? 'I3 = ' + i3 : '# I3 not defined',
+				i4 ? 'I4 = ' + i4 : '# I4 not defined',
+				i5 ? 'I5 = ' + i5 : '# I5 not defined',
 				'',
 				'[Peer]',
 				'PublicKey = ' + pub,
@@ -710,9 +837,9 @@ return network.registerProtocol('wireguard', {
 
 		o.handleGenerateQR = function(section_id, ev) {
 			var mapNode = ss.getActiveModalMap(),
-			    headNode = mapNode.parentNode.querySelector('h4'),
-			    configGenerator = this.createPeerConfig.bind(this, section_id),
-			    parent = this.map,
+				headNode = mapNode.parentNode.querySelector('h4'),
+				configGenerator = this.createPeerConfig.bind(this, section_id),
+				parent = this.map,
 				eips = this.section.formvalue(section_id, 'allowed_ips');
 
 			return Promise.all([
@@ -762,11 +889,11 @@ return network.registerProtocol('wireguard', {
 
 				function handleConfigChange(ev, section_id, value) {
 					var code = this.map.findElement('.qr-code'),
-					    conf = this.map.findElement('.client-config'),
-					    endpoint = this.section.getUIElement(section_id, 'endpoint'),
-					    ips = this.section.getUIElement(section_id, 'allowed_ips');
-					    eips = this.section.getUIElement(section_id, 'addresses');
-					    dns = this.section.getUIElement(section_id, 'dns_servers');
+						conf = this.map.findElement('.client-config'),
+						endpoint = this.section.getUIElement(section_id, 'endpoint'),
+						ips = this.section.getUIElement(section_id, 'allowed_ips');
+						eips = this.section.getUIElement(section_id, 'addresses');
+						dns = this.section.getUIElement(section_id, 'dns_servers');
 
 					if (this.isValid(section_id)) {
 						conf.firstChild.data = configGenerator(endpoint.getValue(), ips.getValue(), eips.getValue(), dns.getValue());
@@ -816,7 +943,7 @@ return network.registerProtocol('wireguard', {
 							'style': 'flex:1;white-space:pre;overflow:auto',
 							'click': function(ev) {
 								var sel = window.getSelection(),
-								    range = document.createRange();
+									range = document.createRange();
 
 								range.selectNodeContents(ev.currentTarget);
 
@@ -857,7 +984,7 @@ return network.registerProtocol('wireguard', {
 					if (!s.formvalue(s.section, 'listen_port')) {
 						nodes.appendChild(E('div', { 'class': 'alert-message' }, [
 							E('p', [
-								_('No fixed interface listening port defined, peers might not be able to initiate connections to this WireGuard instance!')
+								_('No fixed interface listening port defined, peers might not be able to initiate connections to this AmneziaWG instance!')
 							])
 						]));
 					}
@@ -881,7 +1008,7 @@ return network.registerProtocol('wireguard', {
 	},
 
 	deleteConfiguration: function() {
-		uci.sections('network', 'wireguard_%s'.format(this.sid), function(s) {
+		uci.sections('network', 'amneziawg_%s'.format(this.sid), function(s) {
 			uci.remove('network', s['.name']);
 		});
 	}

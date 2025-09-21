@@ -3,10 +3,10 @@
 
 local netmod = luci.model.network
 local interface = luci.model.network.interface
-local proto = netmod:register_protocol("wireguard")
+local proto = netmod:register_protocol("amneziawg")
 
 function proto.get_i18n(self)
-  return luci.i18n.translate("WireGuard VPN")
+  return luci.i18n.translate("AmneziaWG VPN")
 end
 
 function proto.ifname(self)
@@ -18,11 +18,11 @@ function proto.get_interface(self)
 end
 
 function proto.package_name(self)
-  return "wireguard-tools"
+  return "amneziawg-tools"
 end
 
 function proto.is_installed(self)
-  return nixio.fs.access("/lib/netifd/proto/wireguard.sh")
+  return nixio.fs.access("/lib/netifd/proto/amneziawg.sh")
 end
 
 function proto.is_floating(self)
