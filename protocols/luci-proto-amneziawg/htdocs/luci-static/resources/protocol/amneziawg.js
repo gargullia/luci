@@ -882,7 +882,7 @@ return network.registerProtocol('amneziawg', {
 
 				var qrm, qrs, qro;
 
-				qrm = new form.JSONMap({ config: { endpoint: hostnames[0], allowed_ips: ips, addresses: eips, dns_servers: dns } }, null, _('The generated configuration can be imported into a WireGuard client application to set up a connection towards this device.'));
+				qrm = new form.JSONMap({ config: { endpoint: hostnames[0], allowed_ips: ips, addresses: eips, dns_servers: dns } }, null, _('The generated configuration can be imported into a AmneziaWG client application to set up a connection towards this device.'));
 				qrm.parent = parent;
 
 				qrs = qrm.section(form.NamedSection, 'config');
@@ -914,7 +914,7 @@ return network.registerProtocol('amneziawg', {
 				ips.forEach(function(ip) { qro.value(ip) });
 				qro.onchange = handleConfigChange;
 
-				qro = qrs.option(form.DynamicList, 'dns_servers', _('DNS Servers'), _('DNS servers for the remote clients using this tunnel to your openwrt device. Some wireguard clients require this to be set.'));
+				qro = qrs.option(form.DynamicList, 'dns_servers', _('DNS Servers'), _('DNS servers for the remote clients using this tunnel to your openwrt device. Some amneziawg clients require this to be set.'));
 				qro.datatype = 'ipaddr';
 				qro.default = dns;
 				qro.onchange = handleConfigChange;
