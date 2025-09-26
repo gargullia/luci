@@ -23,14 +23,17 @@ msgid "%d invalid field(s)"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:26
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:26
 msgid "%dh ago"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:24
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:24
 msgid "%dm ago"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:22
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:22
 msgid "%ds ago"
 msgstr ""
 
@@ -110,6 +113,7 @@ msgid "(no interfaces attached)"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:622
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:717
 msgctxt "Label indicating further amount of allowed ips"
 msgid "+ %d more"
 msgstr ""
@@ -792,6 +796,7 @@ msgstr ""
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:188
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:188
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:212
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:291
 msgid "Add peer"
 msgstr ""
 
@@ -869,6 +874,7 @@ msgid "Address family"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:273
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:352
 msgid "Address setting is invalid"
 msgstr ""
 
@@ -878,6 +884,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:477
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:795
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:922
 msgid "Addresses"
 msgstr ""
 
@@ -1039,6 +1046,9 @@ msgstr ""
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:611
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:784
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:56
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:706
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:911
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:56
 msgid "Allowed IPs"
 msgstr ""
 
@@ -1047,6 +1057,7 @@ msgid "Allowed network technology"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:304
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:383
 msgid "AllowedIPs setting is invalid"
 msgstr ""
 
@@ -1386,6 +1397,7 @@ msgid "Back to Overview"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:853
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:980
 msgid "Back to peer configuration"
 msgstr ""
 
@@ -1418,6 +1430,7 @@ msgid "Base device"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:144
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:144
 msgid "Base64-encoded public key of this interface for sharing."
 msgstr ""
 
@@ -1663,10 +1676,12 @@ msgstr ""
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/repokeys.js:98
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:209
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:474
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:569
 msgid "Cancel"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:336
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:415
 msgid "Cannot parse configuration: %s"
 msgstr ""
 
@@ -1959,6 +1974,7 @@ msgid "Configuration"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:677
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:772
 msgid "Configuration Export"
 msgstr ""
 
@@ -2043,6 +2059,7 @@ msgid "Connection attempt failed."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:779
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:906
 msgid "Connection endpoint"
 msgstr ""
 
@@ -2259,6 +2276,7 @@ msgid "DNS Records"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:790
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:917
 msgid "DNS Servers"
 msgstr ""
 
@@ -2281,6 +2299,7 @@ msgid ""
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:281
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:360
 msgid "DNS setting is invalid"
 msgstr ""
 
@@ -2345,10 +2364,12 @@ msgid "Data Rate"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:76
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:76
 msgid "Data Received"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:77
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:77
 msgid "Data Transmitted"
 msgstr ""
 
@@ -2461,6 +2482,8 @@ msgstr ""
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:196
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:507
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:53
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:602
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:53
 msgid "Description"
 msgstr ""
 
@@ -2654,6 +2677,7 @@ msgstr ""
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoe.js:57
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pptp.js:70
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:502
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:597
 msgid "Disabled"
 msgstr ""
 
@@ -2705,6 +2729,8 @@ msgstr ""
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:360
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:45
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:66
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:45
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:66
 msgid "Dismiss"
 msgstr ""
 
@@ -3005,6 +3031,7 @@ msgstr ""
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:190
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:190
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:214
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:293
 msgid "Edit peer"
 msgstr ""
 
@@ -3334,18 +3361,23 @@ msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:55
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:75
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:55
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:75
 msgid "Endpoint"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:649
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:744
 msgid "Endpoint Host"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:665
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:760
 msgid "Endpoint Port"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:314
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:393
 msgid "Endpoint setting is invalid"
 msgstr ""
 
@@ -3396,6 +3428,7 @@ msgid "Error"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:156
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:156
 msgid "Error getting PublicKey"
 msgstr ""
 
@@ -3733,6 +3766,8 @@ msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:187
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:39
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:187
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:39
 msgid "Firewall Mark"
 msgstr ""
 
@@ -4057,19 +4092,23 @@ msgid "Generate archive"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:838
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:965
 msgid "Generate configuration"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:878
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:1005
 msgid "Generate configuration…"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:95
 #: protocols/luci-proto-yggdrasil/htdocs/luci-static/resources/protocol/yggdrasil.js:62
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:95
 msgid "Generate new key pair"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:608
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:703
 msgid "Generate preshared key"
 msgstr ""
 
@@ -4078,6 +4117,7 @@ msgid "Generates a configuration suitable for import on a WireGuard peer"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:812
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:939
 msgid "Generating QR code…"
 msgstr ""
 
@@ -4423,6 +4463,7 @@ msgid "IP Address"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:167
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:167
 msgid "IP Addresses"
 msgstr ""
 
@@ -4463,12 +4504,14 @@ msgid ""
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:795
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:922
 msgid ""
 "IP addresses for the peer to use inside the tunnel. Some clients require "
 "this setting."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:784
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:911
 msgid ""
 "IP addresses that are allowed inside the tunnel. The peer will accept "
 "tunnelled packets with source IP addresses matching this list and route back "
@@ -4870,24 +4913,31 @@ msgid "Image check failed:"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:465
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:560
 msgid "Import as peer"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:174
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:465
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:174
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:560
 msgid "Import configuration"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:493
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:588
 msgid "Import configuration as peer…"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:479
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:574
 msgid "Import settings"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:365
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:392
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:460
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:487
 msgid "Imported peer configuration"
 msgstr ""
 
@@ -5075,6 +5125,7 @@ msgid "Instance \"%q\""
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:34
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:34
 msgid "Instance Details"
 msgstr ""
 
@@ -5203,6 +5254,8 @@ msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:38
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:41
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:38
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:41
 msgid "Invalid Base64 key string"
 msgstr ""
 
@@ -5249,6 +5302,7 @@ msgid "Invalid command"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:191
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:191
 msgid "Invalid hexadecimal value"
 msgstr ""
 
@@ -5350,6 +5404,7 @@ msgid "Keep settings and retain the current configuration"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:60
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:60
 msgid "Keep-Alive"
 msgstr ""
 
@@ -5494,6 +5549,8 @@ msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:59
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:78
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:59
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:78
 msgid "Latest Handshake"
 msgstr ""
 
@@ -5682,6 +5739,8 @@ msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:162
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:38
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:162
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:38
 msgid "Listen Port"
 msgstr ""
 
@@ -5712,6 +5771,7 @@ msgid "Listen to multicast beacons"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:288
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:367
 msgid "ListenPort setting is invalid"
 msgstr ""
 
@@ -5735,12 +5795,14 @@ msgid ""
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:175
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:175
 msgid "Load configuration…"
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1254
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2208
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:167
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:167
 msgid "Loading data…"
 msgstr ""
 
@@ -6051,6 +6113,7 @@ msgstr ""
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:182
 #: protocols/luci-proto-xfrm/htdocs/luci-static/resources/protocol/xfrm.js:46
 #: protocols/luci-proto-yggdrasil/htdocs/luci-static/resources/protocol/yggdrasil.js:241
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:182
 msgid "MTU"
 msgstr ""
 
@@ -6571,6 +6634,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1185
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:68
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:36
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:36
 msgid "Name"
 msgstr ""
 
@@ -6757,6 +6821,7 @@ msgid "No Encryption"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:171
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:171
 msgid "No Host Routes"
 msgstr ""
 
@@ -6862,10 +6927,12 @@ msgid "No password set!"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:84
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:84
 msgid "No peers connected"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:499
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:594
 msgid "No peers defined yet."
 msgstr ""
 
@@ -7254,6 +7321,7 @@ msgid "Optional, in seconds. If set to '0', no reconnect is attempted."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:187
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:187
 msgid ""
 "Optional. 32-bit mark for packets during firewall processing. Enter value in "
 "hex, starting with <code>0x</code>."
@@ -7268,6 +7336,7 @@ msgid ""
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:589
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:684
 msgid ""
 "Optional. Base64-encoded preshared key. Adds in an additional layer of "
 "symmetric-key cryptography for post-quantum resistance."
@@ -7278,26 +7347,31 @@ msgid "Optional. Bind to a specific interface."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:646
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:741
 msgid "Optional. Create routes for Allowed IPs for this peer."
 msgstr ""
 
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:196
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:196
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:507
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:602
 msgid "Optional. Description of peer."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:171
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:171
 msgid "Optional. Do not create host routes to peers."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:649
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:744
 msgid ""
 "Optional. Host of peer. Names are resolved prior to bringing up the "
 "interface."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:611
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:706
 msgid ""
 "Optional. IP addresses and prefixes that this peer is allowed to use inside "
 "the tunnel. Usually the peer's tunnel IP addresses and the networks the peer "
@@ -7309,10 +7383,12 @@ msgid "Optional. Maximum Transmission Unit of the XFRM interface."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:182
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:182
 msgid "Optional. Maximum Transmission Unit of tunnel interface."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:665
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:760
 msgid "Optional. Port of peer."
 msgstr ""
 
@@ -7325,12 +7401,14 @@ msgid ""
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:670
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:765
 msgid ""
 "Optional. Seconds between keep alive messages. Default is 0 (disabled). "
 "Recommended value if this device is behind a NAT is 25."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:162
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:162
 msgid "Optional. UDP port used for outgoing and incoming packets."
 msgstr ""
 
@@ -7485,6 +7563,7 @@ msgid "Overwrite existing file \"%s\" ?"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:344
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:423
 msgid "Overwrite the current settings with the imported configuration?"
 msgstr ""
 
@@ -7763,10 +7842,12 @@ msgid "Peak:"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:74
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:74
 msgid "Peer"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:51
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:51
 msgid "Peer Details"
 msgstr ""
 
@@ -7812,6 +7893,7 @@ msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:202
 #: protocols/luci-proto-yggdrasil/htdocs/luci-static/resources/protocol/yggdrasil.js:254
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:281
 msgid "Peers"
 msgstr ""
 
@@ -7839,6 +7921,7 @@ msgid "Permission denied"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:670
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:765
 msgid "Persistent Keep Alive"
 msgstr ""
 
@@ -7847,6 +7930,7 @@ msgid "Persistent reconnect interval"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:323
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:402
 msgid "PersistentKeepAlive setting is invalid"
 msgstr ""
 
@@ -7956,14 +8040,17 @@ msgid "Prefix suppressor"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:589
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:684
 msgid "Preshared Key"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:560
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:655
 msgid "Preshared key in use"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:297
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:376
 msgid "PresharedKey setting is invalid"
 msgstr ""
 
@@ -8033,6 +8120,8 @@ msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:137
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:580
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:137
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:675
 msgid "Private Key"
 msgstr ""
 
@@ -8047,10 +8136,12 @@ msgid "Private key"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:554
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:649
 msgid "Private key present"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:285
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:364
 msgid "PrivateKey setting is missing or invalid"
 msgstr ""
 
@@ -8109,6 +8200,10 @@ msgstr ""
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:575
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:37
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:54
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:144
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:670
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:37
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:54
 msgid "Public Key"
 msgstr ""
 
@@ -8117,6 +8212,7 @@ msgid "Public key"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:537
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:632
 msgid "Public key is missing"
 msgstr ""
 
@@ -8139,6 +8235,7 @@ msgid "Public prefix routed to this device for distribution to clients."
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:294
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:373
 msgid "PublicKey setting is invalid"
 msgstr ""
 
@@ -8336,6 +8433,7 @@ msgid "Receive errors"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:57
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:57
 msgid "Received Data"
 msgstr ""
 
@@ -8599,6 +8697,7 @@ msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:137
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:137
 msgid "Required. Base64-encoded private key for this interface."
 msgstr ""
 
@@ -8875,6 +8974,7 @@ msgid "Round robin"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:646
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:741
 msgid "Route Allowed IPs"
 msgstr ""
 
@@ -10334,6 +10434,7 @@ msgid "The private key for your Yggdrasil node"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:779
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:906
 msgid ""
 "The public hostname or IP address of this system the peer should connect to. "
 "This usually is a static public IP address, a static hostname or a DDNS "
@@ -10748,6 +10849,7 @@ msgid "Transmit hash - balance-xor"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:58
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:58
 msgid "Transmitted Data"
 msgstr ""
 
@@ -11057,6 +11159,8 @@ msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:522
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:97
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:617
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:97
 msgid "Untitled peer"
 msgstr ""
 
@@ -12086,6 +12190,9 @@ msgstr ""
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:39
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:56
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:60
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:39
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:56
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:60
 msgid "none"
 msgstr ""
 
@@ -12128,6 +12235,7 @@ msgid "output"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:28
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/view/amneziawg/status.js:28
 msgid "over a day ago"
 msgstr ""
 
@@ -12145,6 +12253,7 @@ msgid "positive integer value"
 msgstr ""
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:164
+#: protocols/luci-proto-amneziawg/htdocs/luci-static/resources/protocol/amneziawg.js:164
 msgid "random"
 msgstr ""
 
